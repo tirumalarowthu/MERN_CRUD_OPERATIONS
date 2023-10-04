@@ -88,7 +88,7 @@ app.post("/api/books", upload.single("thumbnail")  ,async (req, res) => {
     res.status(500).json({ error: "An error occurred while fetching books." });
   }
 });
-
+console.log("Full mern stack application includes file uploading also involves .")
 // Update A Book
 app.put("/api/books", upload.single("thumbnail"), async (req, res) => {
   try {
